@@ -6,47 +6,32 @@
     <a-scene>
       <a-assets>
         <img id="ground" src="./space2.jpg">
+        <img id="bouh" src="./eho.png">
         <!--  -->
       </a-assets>
-
+      
+      <!-- sol -->
+  <a-plane position="-0.00618 0 0" rotation="-90 0 0" width="4" height="4" side="double" material="color:white">
+ 
+     
+ <!-- porte1-->
       <a-box 
             position=" -2   1   -10"
              rotation="0 1 0" 
              width="1s" height="2" depth="0";
-             color="#ffffff">
+             color="#000000">
       </a-box>
 
-      <a-sphere 
-      position="0 1 -5" 
-      radius="1"
-       color="#000000">
-</a-sphere>
-
-<a-cylinder 
-      position="1 0.75 -3"
-       radius="0.5"
-        height="1.5" 
-        color="#00000">
-</a-cylinder>  >
-      <a-plane 
-            position="0 0 -4" 
-            rotation="0 0 0"
-             width="4" height="4" 
-             color="#ffffff">
+<!-- sol 2-->
+    
+      <a-box position="-0.006 0 0" width="2" height="2" side="double" material="color: white" geometry="" scale="1.99399 2.01836 0.06877"></a-box>
              
-    </a-plane>
-    <a-plane 
-    position="0 1 -2" 
-    rotation="-95 0 0"
-     width="2" height="2" 
-     color="#FFFFFF"
-     
-     
-     >
-     
-</a-plane>
+      <a-plane position="0 5 0" rotation="90 0 0" width="4" height="4" side="double" src="#bouh" transparent="true" material="color: white">
+ 
 
-   <a-entity geometrie="primitive :box" position ="0 2 -3" ></a-entity>
+  
+     
+    <!-- <a-entity geometry="primitive: box" material="color: white" position="-0.00618 0 0" rotation="-90 0 0" width="4" height="4"> -->
 
       <a-sky src="space2.jpg" repeat="4 6"></a-sky>
     </a-scene>
