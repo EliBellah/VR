@@ -1,4 +1,6 @@
 # Mention Numerique ENSAAMA
-* [labyrinthe](labyrinthe.html)
-* [labyrinthe 2](labyrinthe2.html)
+
+* [labyrinthe](labyrinthe2.html)
 * [what a mess](./3D/bazar.html)
+* [volume2archi](./3D/lights/maquette.html)
+
