@@ -7,7 +7,14 @@
         <a-assets>
             <a-asset-item id="glb" src="./assets/maquette.glb"></a-asset-item>
           </a-assets>
+
+        <!-- CAMERA -->
+        <a-entity  wasd-controls="acceleration:10; fly:true" position="0 1 0" ></a-entity>
+
         
+        <!-- Light-->
+        <a-entity light="type: point; intensity: 2; distance: 50; decay: 2; color: #00000" position="20 0 0"></a-entity>
+
           <a-light type="spot" position="0 4 -3.5" rotation="-90 0 0" color="red" intensity="1"
           angle="20" penumbra="5">   </a-light>
 
