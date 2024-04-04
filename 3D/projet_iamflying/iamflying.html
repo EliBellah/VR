@@ -35,11 +35,20 @@
          <a-sky id="image-360" radius="500" change-sky radius="10" src="#sky0" repeat="8X8"  ></a-sky>
 
           <a-assets>
-           
-    
+            <a-asset-item id="arbre" src="./modeles/tree.glb"></a-asset-item>
+            <a-asset-item id="arbre1" src="./modeles/tree1.glb"></a-asset-item>
+
+            <a-asset-item id="jelly" src="./modeles/jellyfish.glb"></a-asset-item>
+            <a-asset-item id="jelly2" src="./modeles/jellyfish2.glb"></a-asset-item>
             <a-asset-item id="jelly6" src="./modeles/jellyfish6.glb"></a-asset-item>
 
             <a-asset-item id="cloud" src="./modeles/cloud.glb"></a-asset-item>
+
+            <a-asset-item id="chemin" src="./modeles/sidewalk.glb"></a-asset-item> <!--trop lourd-->
+          
+          
+          
+
            </a-assets>
 
           
@@ -62,6 +71,16 @@
         </a-entity>
 
 
+         
+         <a-entity position="1.94544 2.36564 -1.99203" 
+         scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
+
+        <a-entity position="-5.16425 2.36564 -1.32347" scale="0.07 0.17 0.3" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
+
+        <a-entity position="4.80604 2.2 -2.55257" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
 
         <a-entity position="-2.23728 0.09579 -4.28136" scale="0.09722 0.09722 0.09722" gltf-model="./modeles/tree.glb" animation-mixer="" visible="">
         </a-entity>
@@ -75,13 +94,31 @@
         <a-entity position="7.70419 0.09579 3.32385" scale="0.09722 0.09722 0.09722" gltf-model="./modeles/tree.glb" animation-mixer="" visible="">
         </a-entity>
 
+        <a-entity position="6.48438 2 -8.83236" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
+
+        <a-entity position="-3.19011 2 -8.83236" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
+
 
         <a-sky id="image-360" radius="500" change-sky="" src="#sky0" repeat="8X8" material="repeat: 8 1" geometry=""></a-sky>
 
 
        
 
+        <a-entity position="5 2.36564 7" 
+        scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+       </a-entity>
 
+       <a-entity position="3 2 3" 
+       scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+      </a-entity>
+
+      <a-entity position="1.94544 2.36564 -1.99203" 
+      scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+     </a-entity>
+
+         
 
         <a-entity position="1.05959 -0.23742 -2.86604" 
         scale="0.05 0.05 0.05" gltf-model="./modeles/tree.glb" animation-mixer="" visible="">
@@ -93,7 +130,9 @@
         </a-entity>
 
         
-         
+          <a-entity position="-12.84816 -19.22621 -1.65303"
+           scale="8 8 8" rotation="0 0 95" gltf-model="./modeles/jellyfish6.glb" animation-mixer=""> 
+          </a-entity> 
 
           <a-entity position="-0.70854 0.2629 -0.67982" scale="0.05 0.05 0.05" rotation="0 83.6759023164957 94.99984017946129" gltf-model="./modeles/jellyfish6.glb" animation-mixer="" visible=""> 
         </a-entity>
@@ -125,8 +164,21 @@
 
   
 
-     
-      
+        
+       <a-entity position ="0 0 0" scale="0.05 0.05 0.05"
+       gltf-model="#chemin">
+      </a-entity>
+      <a-entity position="-3.02455 0 -1.48799" scale="0.5 0.5 0.5" gltf-model="./modeles/sidewalk.glb" visible="">
+    </a-entity>
+    <a-entity position="-0.0239 0 -1.48117" scale="0.5 0.5 0.5" gltf-model="./modeles/sidewalk.glb" visible="">
+    </a-entity>
+    <a-entity position="0.00303 0 0.37873" scale="0.5 0.5 0.5" gltf-model="./modeles/sidewalk.glb" visible="" rotation="0.020053522829578813 -179.884683443683 0">
+    </a-entity>
+    
+    <a-entity position="-2.99469 0 0.37873" scale="0.5 0.5 0.5" gltf-model="./modeles/sidewalk.glb" visible="" rotation="0.020053522829578813 -179.884683443683 0">
+    </a-entity>
+           
+        </a-assets>
 
 
 
@@ -135,12 +187,12 @@
         <!-- FIN -->
 
         <!-- PLAYER -->
-        <a-entity id="player" position="0 0 0" fly="scalaire: 0.05 0.05 0.05; trace: true">
+        <a-entity id="player" position="0 0 0" fly="scalaire: 0.1 0.1 0.1; trace: true">
             <a-entity id="cam" camera position="0 0.5 0" 
                 currentposition="trace:false" 
                 look-controls wasd-controls="acceleration:10">
-                <a-entity id="lefthand" handposition="trace: false" oculus-touch-controls="hand: left"></a-entity>
-                <a-entity id="righthand" handposition="trace: false" oculus-touch-controls="hand: right" droite></a-entity> 
+                <a-entity id="lefthand" position="0 0.5 0"handposition="trace: false" oculus-touch-controls="hand: left"></a-entity>
+                <a-entity id="righthand" position="0 0.5 0"handposition="trace: false" oculus-touch-controls="hand: right" droite></a-entity> 
                 <a-text id="txtlog" value="" aligne="center" color="#0000FF" 
                     position="0 0 -1" rotation="0 0 0" scale="0.25 0.25 0.25">
                 </a-text>
