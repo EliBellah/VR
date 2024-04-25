@@ -9,7 +9,6 @@
     <script src="https://eminet666.github.io/ensaama/components/debug/debug.js"></script>
     <!-- <script src="https://eminet666.github.io/ensaama/2023/DNMADE1/projet/fly.js"></script>    -->
     <script src="./fly.js"></script>
-    <script src="https://github.com/donmccurdy/aframe-extras"></script>
 </head>
 
 <body>
@@ -35,9 +34,9 @@
          <a-sky id="image-360" radius="500" change-sky radius="10" src="#sky0" repeat="8X8"  ></a-sky>
 
           <a-assets>
-          <!--  <a-asset-item id="arbre" src="./modeles/tree.glb"></a-asset-item> !-->
-            <a-asset-item id="arbre1" src="./modeles/tree1/tree1.gltf"></a-asset-item>
-            <!-- <a-asset-item id="jelly6" src="./modeles/jellyfish6.glb"></a-asset-item>  -->
+           <a-asset-item id="arbre" src="./modeles/tree.glb"></a-asset-item> !
+            <!-- <a-asset-item id="arbre1" src="./modeles/tree1/tree1.gltf"></a-asset-item> -->
+            <a-asset-item id="jelly6" src="./modeles/jellyfish6.glb"></a-asset-item> 
             <!-- <a-asset-item id="cloud" src="./modeles/cloud.glb"></a-asset-item> -->
            <!-- <a-asset-item id="chemin" src="./modeles/tree11.glb"></a-asset-item> !-->
           
@@ -77,15 +76,7 @@
         
 
          
-         <a-entity position="1.94544 2.36564 -1.99203" 
-         scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
-        </a-entity>
-
-        <a-entity position="-5.16425 2.36564 -1.32347" scale="0.07 0.17 0.3" gltf-model="./modeles/tree1.glb" visible="">
-        </a-entity>
-
-        <a-entity position="4.80604 2.2 -2.55257" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
-        </a-entity>
+        
 
         <a-entity position="-2.23728 0.09579 -4.28136" scale="0.09722 0.09722 0.09722" gltf-model="./modeles/tree.glb" animation-mixer="" visible="">
         </a-entity>
@@ -99,18 +90,20 @@
         <a-entity position="7.70419 0.09579 3.32385" scale="0.09722 0.09722 0.09722" gltf-model="./modeles/tree.glb" animation-mixer="" visible="">
         </a-entity>
 
-        <a-entity position="6.48438 2 -8.83236" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+        <!-- <a-entity position="6.48438 2 -8.83236" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
         </a-entity>
 
-        <a-entity position="-3.19011 2 -8.83236" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+         <a-entity position="1.94544 2.36564 -1.99203" 
+         scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
         </a-entity>
 
+           <a-entity position="-5.16425 2.36564 -1.32347" scale="0.07 0.17 0.3" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
+        
+        <a-entity position="4.80604 2.2 -2.55257" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
 
-        <a-sky id="image-360" radius="500" change-sky="" src="#sky0" repeat="8X8" material="repeat: 8 1" geometry=""></a-sky>
-
-
-       
-
+        
         <a-entity position="5 2.36564 7" 
         scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
        </a-entity>
@@ -123,7 +116,15 @@
       scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
      </a-entity>
 
-         
+        <a-entity position="-3.19011 2 -8.83236" scale="0.15625 0.14001 0.12019" gltf-model="./modeles/tree1.glb" visible="">
+        </a-entity>
+ -->
+
+        <a-sky id="image-360" radius="500" change-sky="" src="#sky0" repeat="8X8" material="repeat: 8 1" geometry=""></a-sky>
+
+
+       
+
 
         <a-entity position="1.05959 -0.23742 -2.86604" 
         scale="0.05 0.05 0.05" gltf-model="./modeles/tree.glb" animation-mixer="" visible="">
@@ -169,7 +170,7 @@
 
   
 
-        
+<!--         
       <a-entity position="-3.02455 0 -1.48799" scale="0.5 0.5 0.5" gltf-model="#chemin" visible="">
     </a-entity>
     <a-entity position="-0.0239 0 -1.48117" scale="0.5 0.5 0.5" gltf-model="#chemin" visible="">
@@ -178,7 +179,7 @@
     </a-entity>
     
     <a-entity position="-2.99469 0 0.37873" scale="0.5 0.5 0.5" gltf-model="#chemin" visible="" rotation="0.020053522829578813 -179.884683443683 0">
-    </a-entity>
+    </a-entity> -->
            
         </a-assets>
 
